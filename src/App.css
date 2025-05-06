@@ -1,0 +1,253 @@
+/* === GLOBAL DARK THEME === */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111827;
+  font-family: 'Segoe UI', sans-serif;
+  color: #e5e7eb;
+}
+
+.app-container {
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #111827;
+}
+
+.app-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #a855f7;
+}
+
+h2 {
+  color: #a855f7;
+}
+
+h3 {
+  color: #a855f7;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.error-text {
+  color: #f87171;
+  margin-top: 0.5rem;
+}
+
+/* === FORM ELEMENTS === */
+.input {
+  display: block;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+  background-color: #111827;
+  color: #f3f4f6;
+  border: 1px solid #4b5563;
+  border-radius: 4px;
+}
+
+select.input {
+  background-color: #1f2937;
+}
+
+/* === BUTTONS === */
+.download-btn {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #a855f7;
+}
+
+.delete-btn {
+  margin-top: 1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #991b1b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* === ADD BLOCK === */
+.add-block {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.add-block select {
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+  background-color: #1f2937;
+  color: #e5e7eb;
+  border: 1px solid #4b5563;
+  border-radius: 4px;
+}
+
+/* === COLOR PICKERS === */
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.color-picker input[type='color'] {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* === FILE PICKERS === */
+.file-input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.file-input-row input[type='file'] {
+  color: #f3f4f6;
+  background: transparent;
+  border: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+/* === QUIZ CARD LAYOUT === */
+
+.quiz-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: #1f2937;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.quiz-card form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-card form>label {
+  margin-top: 0.75rem;
+}
+
+.quiz-card .input {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  max-width: 400px;
+}
+
+
+/* === PREVIEW PANEL === */
+
+.question-preview {
+  width: 100%;
+  max-width: 900px;
+  /* ~3x wider than before */
+  flex-shrink: 0;
+}
+
+.preview-box {
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #1e293b;
+  background-size: cover;
+  background-position: center;
+  color: #e0e7ff;
+  border: 1px solid #334155;
+  min-height: 600px;
+  /* ~3x taller */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.preview-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a855f7;
+  margin-bottom: 1rem;
+}
+
+.preview-body {
+  font-size: 1.25rem;
+  color: #f3f4f6;
+}
+
+.preview-type {
+  font-size: 1rem;
+  font-style: italic;
+  color: #c084fc;
+  margin-bottom: 1rem;
+}
+
+
+.quiz-form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.quiz-form-grid>div {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-editor {
+  background-color: #1f2937;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.settings-editor label {
+  margin-top: 1rem;
+  display: block;
+  color: #d1d5db;
+}
+
+.settings-editor .input,
+.settings-editor select {
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+  background-color: #111827;
+  color: #f3f4f6;
+  border: 1px solid #4b5563;
+  border-radius: 4px;
+}
+
+.settings-editor h3 {
+  color: #a855f7;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.settings-editor .color-picker,
+.settings-editor .file-input-row {
+  max-width: 400px;
+}
